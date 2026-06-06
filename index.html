@@ -79,7 +79,9 @@
   select.s-progress{background-color:#dbeafe;color:#1e40af;border-color:#93c5fd;}
   select.s-done    {background-color:#dcfce7;color:#166534;border-color:#86efac;}
   select.s-blocked {background-color:#f3e8ff;color:#6b21a8;border-color:#d8b4fe;}
-  select.s-archived{background-color:#f1f5f9;color:#64748b;border-color:#cbd5e1;}
+  select.s-archived {background-color:#f1f5f9;color:#64748b;border-color:#cbd5e1;}
+  select.s-payroll  {background-color:#fdf4ff;color:#7e22ce;border-color:#e9d5ff;}
+  select.s-tax      {background-color:#fff7ed;color:#c2410c;border-color:#fed7aa;}
 
   textarea.notes{width:100%;border:1px solid var(--border);border-radius:6px;padding:5px 8px;font-size:12px;font-family:inherit;resize:vertical;min-height:32px;background:#f9fafb;color:var(--text);transition:border-color 0.15s;}
   textarea.notes:focus{outline:none;border-color:var(--accent);background:#fff;}
@@ -136,6 +138,8 @@
     <div class="stat"><div class="stat-num blue" id="sFyi">0</div><div class="stat-lbl">FYI</div></div>
     <div class="stat"><div class="stat-num green" id="sDone">0</div><div class="stat-lbl">Done</div></div>
     <div class="stat"><div class="stat-num gray" id="sArchived">0</div><div class="stat-lbl">Archived</div></div>
+    <div class="stat"><div class="stat-num" style="color:#7e22ce" id="sPayroll">0</div><div class="stat-lbl">Payroll</div></div>
+    <div class="stat"><div class="stat-num" style="color:#c2410c" id="sTax">0</div><div class="stat-lbl">Tax Pmt</div></div>
     <div class="stat"><div class="stat-num" id="sTotal">0</div><div class="stat-lbl">Total</div></div>
   </div>
 
@@ -148,6 +152,8 @@
       <span class="chip" onclick="setFilter('fyi',this)">🔵 FYI</span>
       <span class="chip" onclick="setFilter('done',this)">✅ Done</span>
       <span class="chip" onclick="setFilter('archived',this)">🗄 Archived</span>
+      <span class="chip" onclick="setFilter('payroll',this)">💜 Payroll</span>
+      <span class="chip" onclick="setFilter('tax',this)">🟠 Tax Pmt</span>
     </div>
     <div class="scan-info" id="scanInfo"></div>
   </div>
@@ -257,6 +263,8 @@ function updateStats(){
   document.getElementById('sFyi').textContent     = open.filter(t=>t.priority==='fyi').length;
   document.getElementById('sDone').textContent    = tasks.filter(t=>states[tkey(t)]?.status==='Done').length;
   document.getElementById('sArchived').textContent= tasks.filter(t=>states[tkey(t)]?.status==='Archived').length;
+  document.getElementById('sPayroll').textContent  = tasks.filter(t=>states[tkey(t)]?.status==='Payroll').length;
+  document.getElementById('sTax').textContent      = tasks.filter(t=>states[tkey(t)]?.status==='Tax Payment').length;
   document.getElementById('sTotal').textContent   = tasks.length;
 }
 
@@ -270,12 +278,14 @@ function setFilter(f,el){
 function renderTable(){
   let list = [...tasks];
   const getStatus = t => states[tkey(t)]?.status || t.default_status || 'Open';
-  if      (activeFilter==='open')     list = list.filter(t=>!['Done','Archived'].includes(getStatus(t)));
+  if      (activeFilter==='open')     list = list.filter(t=>!['Done','Archived','Payroll','Tax Payment'].includes(getStatus(t)));
   else if (activeFilter==='high')     list = list.filter(t=>t.priority==='high' && !['Done','Archived'].includes(getStatus(t)));
   else if (activeFilter==='medium')   list = list.filter(t=>t.priority==='medium' && !['Done','Archived'].includes(getStatus(t)));
   else if (activeFilter==='fyi')      list = list.filter(t=>t.priority==='fyi' && !['Done','Archived'].includes(getStatus(t)));
   else if (activeFilter==='done')     list = list.filter(t=>getStatus(t)==='Done');
   else if (activeFilter==='archived') list = list.filter(t=>getStatus(t)==='Archived');
+  else if (activeFilter==='payroll')  list = list.filter(t=>getStatus(t)==='Payroll');
+  else if (activeFilter==='tax')      list = list.filter(t=>getStatus(t)==='Tax Payment');
 
   if (!list.length) {
     document.getElementById('emptyState').style.display='block';
@@ -291,7 +301,7 @@ function renderTable(){
 
   const priCls={high:'pri-high',medium:'pri-medium',fyi:'pri-fyi'};
   const priLbl={high:'High',medium:'Medium',fyi:'FYI'};
-  const stCls={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived'};
+  const stCls={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived','Payroll':'s-payroll','Tax Payment':'s-tax'};
   const rowCls={'Done':'done-row','Archived':'archive-row'};
 
   document.getElementById('todoBody').innerHTML = list.map((t,i)=>{
@@ -317,6 +327,8 @@ function renderTable(){
           <option ${status==='Done'?'selected':''}>Done</option>
           <option ${status==='Blocked'?'selected':''}>Blocked</option>
           <option ${status==='Archived'?'selected':''}>Archived</option>
+          <option ${status==='Payroll'?'selected':''}>Payroll</option>
+          <option ${status==='Tax Payment'?'selected':''}>Tax Payment</option>
         </select>
       </td>
       <td>
@@ -333,8 +345,8 @@ function renderTable(){
 function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
 function updateStatus(k,sel){
-  const sc={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived'};
-  const rc={'Done':'done-row','Archived':'archive-row'};
+  const sc={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived','Payroll':'s-payroll','Tax Payment':'s-tax'};
+  const rc={'Done':'done-row','Archived':'archive-row','Payroll':'done-row','Tax Payment':'done-row'};
   sel.className='status-sel '+(sc[sel.value]||'s-open');
   if (!states[k]) states[k]={};
   states[k].status=sel.value;
@@ -343,7 +355,7 @@ function updateStatus(k,sel){
   const row=document.getElementById('row-'+sk);
   if (row) row.className=rc[sel.value]||'';
   // Re-render if in a filtered view and item no longer belongs
-  if (['open','high','medium','fyi'].includes(activeFilter) && ['Done','Archived'].includes(sel.value)) {
+  if (['open','high','medium','fyi'].includes(activeFilter) && ['Done','Archived','Payroll','Tax Payment'].includes(sel.value)) {
     setTimeout(renderTable, 300);
   }
 }
