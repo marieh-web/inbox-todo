@@ -1,5 +1,5 @@
 {
-  "scanned_at": "Jun 6, 2026 \u00b7 full scan (Done reset for review)",
+  "scanned_at": "Jun 6, 2026 \u00b7 full scan (Archived reset for review)",
   "tasks": [
     {
       "priority": "high",
@@ -247,8 +247,7 @@
       "from": "communications@ramp.com",
       "action": "Review weekly Ramp spend digest and check for any unusual transactions",
       "due": "This week",
-      "thread_id": "19e8d013dd60481f",
-      "default_status": "Archived"
+      "thread_id": "19e8d013dd60481f"
     },
     {
       "priority": "medium",
@@ -256,8 +255,7 @@
       "from": "onlinebanking@svb.com",
       "action": "Download and review May account statements for all SVB accounts (Scribd Inc, NL BV, Fable)",
       "due": "This week",
-      "thread_id": "19e864d4d59cf194",
-      "default_status": "Archived"
+      "thread_id": "19e864d4d59cf194"
     },
     {
       "priority": "fyi",
@@ -265,8 +263,7 @@
       "from": "onlinebanking@svb.com",
       "action": "Review payment notifications: HMRC VAT, Tollstjori, Tipalti Inc., Belastingdienst, Tentoo",
       "due": "Today",
-      "thread_id": "19e9999ac15782bc",
-      "default_status": "Archived"
+      "thread_id": "19e9999ac15782bc"
     },
     {
       "priority": "fyi",
@@ -314,8 +311,7 @@
       "from": "laurelm@scribd.com",
       "action": "Read recap thread from Laurel and Mary; follow up if needed",
       "due": "\u2014",
-      "thread_id": "19e907d8b2bb89dc",
-      "default_status": "Archived"
+      "thread_id": "19e907d8b2bb89dc"
     },
     {
       "priority": "fyi",
@@ -323,8 +319,7 @@
       "from": "gemini-notes@google.com",
       "action": "Review auto-generated meeting notes from June 5 session",
       "due": "\u2014",
-      "thread_id": "19e998c8bd81ffff",
-      "default_status": "Archived"
+      "thread_id": "19e998c8bd81ffff"
     },
     {
       "priority": "fyi",
@@ -332,8 +327,7 @@
       "from": "proofpointquarantine@scribd.com",
       "action": "Check quarantine digests for any legitimate emails held in filter",
       "due": "Today",
-      "thread_id": "19e981175222129a",
-      "default_status": "Archived"
+      "thread_id": "19e981175222129a"
     },
     {
       "priority": "fyi",
@@ -341,8 +335,7 @@
       "from": "citiclientfeedback@citi.com",
       "action": "Optional: Complete Citi feedback survey on digital banking products",
       "due": "\u2014",
-      "thread_id": "19e88aabfbe175cf",
-      "default_status": "Archived"
+      "thread_id": "19e88aabfbe175cf"
     },
     {
       "priority": "fyi",
@@ -350,8 +343,7 @@
       "from": "servicescomms@citi.com",
       "action": "Optional: Register for Citi Online Academy Trade Tech Series Part 2 webinar",
       "due": "\u2014",
-      "thread_id": "19e93799635b19d5",
-      "default_status": "Archived"
+      "thread_id": "19e93799635b19d5"
     },
     {
       "priority": "fyi",
