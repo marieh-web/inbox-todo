@@ -7,7 +7,7 @@
 <style>
   :root {
     --bg:#f7f8fa;--surface:#fff;--border:#e2e6ea;--text:#1a1d23;--muted:#6b7280;
-    --accent:#2563eb;--danger:#dc2626;--warn:#d97706;--info:#2563eb;--success:#16a34a;
+    --accent:#2563eb;--danger:#dc2626;--warn:#d97706;--success:#16a34a;
     --radius:10px;--shadow:0 1px 4px rgba(0,0,0,0.07);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
@@ -17,7 +17,6 @@
   .brand h1{font-size:22px;font-weight:700;letter-spacing:-0.3px;}
   .brand p{font-size:13px;color:var(--muted);margin-top:3px;}
 
-  /* SETUP */
   .setup{background:var(--surface);border:1.5px dashed var(--border);border-radius:var(--radius);padding:22px;margin-bottom:22px;}
   .setup h2{font-size:15px;font-weight:600;margin-bottom:6px;}
   .setup p{font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.6;}
@@ -31,30 +30,25 @@
   .api-note a{color:var(--accent);}
   .saved-pill{font-size:12px;background:#dcfce7;color:#166534;padding:3px 10px;border-radius:99px;display:none;align-items:center;gap:5px;}
 
-  /* BUTTONS */
   .btn{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all 0.15s;font-family:inherit;}
   .btn-primary{background:var(--accent);color:#fff;}
   .btn-primary:hover{background:#1d4ed8;}
-  .btn-primary:disabled{background:#93c5fd;cursor:not-allowed;}
   .btn-outline{background:var(--surface);color:var(--text);border:1px solid var(--border);}
   .btn-outline:hover{border-color:#aab;background:#f3f4f6;}
   .btn-sm{padding:6px 13px;font-size:12px;}
 
-  /* STATS */
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-bottom:20px;}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:10px;margin-bottom:20px;}
   .stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:13px 15px;}
-  .stat-num{font-size:24px;font-weight:700;line-height:1;}
+  .stat-num{font-size:22px;font-weight:700;line-height:1;}
   .stat-lbl{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;}
-  .red{color:var(--danger);} .amber{color:var(--warn);} .blue{color:var(--info);} .green{color:var(--success);}
+  .red{color:var(--danger);} .amber{color:var(--warn);} .blue{color:#2563eb;} .green{color:var(--success);} .gray{color:#6b7280;}
 
-  /* TOOLBAR */
   .toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:10px;}
   .filters{display:flex;gap:6px;flex-wrap:wrap;}
   .chip{padding:5px 13px;border-radius:99px;border:1px solid var(--border);background:var(--surface);font-size:12px;font-weight:500;cursor:pointer;color:var(--muted);transition:all 0.15s;font-family:inherit;}
   .chip.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   .scan-info{font-size:12px;color:var(--muted);}
 
-  /* TABLE */
   .table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:auto;box-shadow:var(--shadow);}
   table{width:100%;border-collapse:collapse;min-width:780px;}
   thead th{background:#1e293b;color:#e2e8f0;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;padding:11px 10px;text-align:left;white-space:nowrap;}
@@ -62,36 +56,36 @@
   tbody tr{border-bottom:1px solid var(--border);transition:background 0.1s;}
   tbody tr:last-child{border-bottom:none;}
   tbody tr:hover{background:#f8fafc;}
-  tbody tr.done-row{opacity:0.4;}
+  tbody tr.done-row{opacity:0.38;}
   tbody tr.done-row .subj-link{text-decoration:line-through;}
+  tbody tr.archive-row{opacity:0.28;background:#f9f9f9;}
+  tbody tr.archive-row .subj-link{text-decoration:line-through;color:var(--muted);}
   td{padding:10px 10px;font-size:13px;vertical-align:middle;}
   td:first-child{text-align:center;color:var(--muted);font-size:12px;width:36px;}
 
-  /* PRIORITY */
   .pri{display:inline-block;padding:3px 8px;border-radius:99px;font-size:11px;font-weight:700;white-space:nowrap;}
   .pri-high{background:#fee2e2;color:#991b1b;}
   .pri-medium{background:#fef3c7;color:#92400e;}
   .pri-fyi{background:#dbeafe;color:#1e40af;}
 
-  /* SUBJECT LINK */
   .subj-link{color:var(--accent);text-decoration:none;font-weight:500;font-size:13px;display:block;line-height:1.4;}
   .subj-link:hover{text-decoration:underline;}
 
-  /* STATUS */
-  select.status-sel{appearance:none;width:100%;padding:5px 24px 5px 9px;border-radius:6px;border:1px solid transparent;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;}
+  select.status-sel{appearance:none;width:100%;padding:5px 24px 5px 9px;border-radius:6px;border:1px solid transparent;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 6px center;}
   select.status-sel:focus{outline:2px solid var(--accent);}
-  select.s-open{background-color:#fef9c3;color:#854d0e;border-color:#fde047;}
+  select.s-open    {background-color:#fef9c3;color:#854d0e;border-color:#fde047;}
   select.s-progress{background-color:#dbeafe;color:#1e40af;border-color:#93c5fd;}
-  select.s-done{background-color:#dcfce7;color:#166534;border-color:#86efac;}
-  select.s-blocked{background-color:#f3e8ff;color:#6b21a8;border-color:#d8b4fe;}
+  select.s-done    {background-color:#dcfce7;color:#166534;border-color:#86efac;}
+  select.s-blocked {background-color:#f3e8ff;color:#6b21a8;border-color:#d8b4fe;}
+  select.s-archived{background-color:#f1f5f9;color:#64748b;border-color:#cbd5e1;}
 
-  /* NOTES */
   textarea.notes{width:100%;border:1px solid var(--border);border-radius:6px;padding:5px 8px;font-size:12px;font-family:inherit;resize:vertical;min-height:32px;background:#f9fafb;color:var(--text);transition:border-color 0.15s;}
   textarea.notes:focus{outline:none;border-color:var(--accent);background:#fff;}
   .saved-flash{font-size:11px;color:var(--success);opacity:0;transition:opacity 0.3s;display:block;margin-top:2px;height:13px;}
   .saved-flash.show{opacity:1;}
 
-  /* EMPTY / PROGRESS */
   .empty{text-align:center;padding:52px 20px;color:var(--muted);}
   .empty h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;}
   .empty p{font-size:13px;line-height:1.6;}
@@ -99,17 +93,11 @@
   .progress-bar{height:100%;background:var(--accent);border-radius:99px;transition:width 0.4s;width:0%;}
   .status-line{font-size:12px;color:var(--muted);margin-bottom:8px;min-height:18px;}
   .bottom-bar{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
-  @keyframes spin{to{transform:rotate(360deg);}}
-  .spin{display:inline-block;animation:spin 0.9s linear infinite;}
-
-  /* NOTICE BANNER */
   .notice{background:#eff6ff;border:1px solid #bfdbfe;border-radius:var(--radius);padding:14px 16px;margin-bottom:18px;font-size:13px;color:#1e40af;line-height:1.6;display:flex;gap:10px;align-items:flex-start;}
-  .notice b{font-weight:600;}
 </style>
 </head>
 <body>
 <div class="shell">
-
   <header>
     <div class="brand">
       <h1>📋 Daily Inbox To-Do</h1>
@@ -117,66 +105,53 @@
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;">
       <button class="btn btn-outline btn-sm" onclick="exportCSV()" id="exportBtn" style="display:none;">⬇ Export CSV</button>
-      <button class="btn btn-outline btn-sm" onclick="openSetup()" id="settingsBtn">⚙ Settings</button>
+      <button class="btn btn-outline btn-sm" onclick="openSetup()">⚙ Settings</button>
     </div>
   </header>
 
-  <!-- HOW IT WORKS NOTICE -->
   <div class="notice" id="howItWorks">
     <span style="font-size:18px;">💡</span>
-    <span><b>No API key needed!</b> Just go to your Claude chat, say <b>"scan my inbox"</b> and Claude will fetch your Gmail, analyze it, and automatically update this page with today's to-do list. Your notes and status are saved in your browser across days.</span>
+    <span><b>No API key needed!</b> Go to Claude and say <b>"scan my inbox"</b> — Claude fetches your Gmail, analyzes it, and pushes the updated list here automatically.</span>
   </div>
 
-  <!-- SETUP (GitHub token for auto-push, optional) -->
   <div class="setup" id="setupCard" style="display:none;">
     <h2>⚙ Settings</h2>
-    <p>Your tasks load automatically when Claude pushes updates. Optionally enter a GitHub token so Claude can write directly to your repo without you doing anything.</p>
+    <p>Your tasks load automatically when Claude pushes updates. Save your GitHub repo here so the app always knows where to pull from.</p>
     <div class="setup-grid">
-      <div class="field">
-        <label>GitHub Personal Access Token (optional)</label>
-        <input type="password" id="ghToken" placeholder="ghp_..." />
-      </div>
-      <div class="field">
-        <label>GitHub Repo (user/repo)</label>
-        <input type="text" id="ghRepo" placeholder="marieh-web/inbox-todo" />
-      </div>
+      <div class="field"><label>GitHub Repo (user/repo)</label><input type="text" id="ghRepo" placeholder="marieh-web/inbox-todo" /></div>
     </div>
     <div class="setup-actions">
-      <button class="btn btn-primary btn-sm" onclick="saveSettings()">Save Settings</button>
+      <button class="btn btn-primary btn-sm" onclick="saveSettings()">Save</button>
       <button class="btn btn-outline btn-sm" onclick="closeSetup()">Cancel</button>
       <span class="saved-pill" id="settingsSaved">✓ Saved</span>
     </div>
-    <p class="api-note">
-      Get a GitHub token at <a href="https://github.com/settings/tokens/new?scopes=repo&description=inbox-todo" target="_blank">github.com/settings/tokens</a> — enable the <b>repo</b> scope only. Stored in your browser only.
-    </p>
   </div>
 
   <div class="progress" id="progressBar"><div class="progress-bar" id="progressFill"></div></div>
   <div class="status-line" id="statusLine"></div>
 
-  <!-- STATS -->
   <div class="stats" id="statsRow" style="display:none;">
     <div class="stat"><div class="stat-num red" id="sHigh">0</div><div class="stat-lbl">High</div></div>
     <div class="stat"><div class="stat-num amber" id="sMed">0</div><div class="stat-lbl">Medium</div></div>
     <div class="stat"><div class="stat-num blue" id="sFyi">0</div><div class="stat-lbl">FYI</div></div>
     <div class="stat"><div class="stat-num green" id="sDone">0</div><div class="stat-lbl">Done</div></div>
+    <div class="stat"><div class="stat-num gray" id="sArchived">0</div><div class="stat-lbl">Archived</div></div>
     <div class="stat"><div class="stat-num" id="sTotal">0</div><div class="stat-lbl">Total</div></div>
   </div>
 
-  <!-- TOOLBAR -->
   <div class="toolbar" id="toolbarRow" style="display:none;">
     <div class="filters">
-      <span class="chip active" onclick="setFilter('all',this)">All</span>
+      <span class="chip active" onclick="setFilter('open',this)">Open</span>
+      <span class="chip" onclick="setFilter('all',this)">All</span>
       <span class="chip" onclick="setFilter('high',this)">🔴 High</span>
       <span class="chip" onclick="setFilter('medium',this)">🟠 Medium</span>
       <span class="chip" onclick="setFilter('fyi',this)">🔵 FYI</span>
-      <span class="chip" onclick="setFilter('open',this)">Open only</span>
       <span class="chip" onclick="setFilter('done',this)">✅ Done</span>
+      <span class="chip" onclick="setFilter('archived',this)">🗄 Archived</span>
     </div>
     <div class="scan-info" id="scanInfo"></div>
   </div>
 
-  <!-- TABLE -->
   <div class="table-wrap" id="tableWrap">
     <div class="empty" id="emptyState">
       <div style="font-size:40px;margin-bottom:14px;">📬</div>
@@ -186,14 +161,9 @@
     <table id="todoTable" style="display:none;">
       <thead>
         <tr>
-          <th>#</th>
-          <th style="width:80px;">Priority</th>
-          <th style="width:200px;">Subject / Task</th>
-          <th style="width:130px;">From</th>
-          <th>Action Needed</th>
-          <th style="width:80px;">Due</th>
-          <th style="width:115px;">Status</th>
-          <th style="width:180px;">Notes / Remarks</th>
+          <th>#</th><th style="width:80px;">Priority</th><th style="width:200px;">Subject / Task</th>
+          <th style="width:130px;">From</th><th>Action Needed</th>
+          <th style="width:80px;">Due</th><th style="width:125px;">Status</th><th style="width:180px;">Notes / Remarks</th>
         </tr>
       </thead>
       <tbody id="todoBody"></tbody>
@@ -201,145 +171,139 @@
   </div>
 
   <div class="bottom-bar" id="bottomBar" style="display:none;">
-    <button class="btn btn-outline btn-sm" onclick="clearDone()">🗑 Reset Done → Open</button>
     <button class="btn btn-outline btn-sm" onclick="exportCSV()">⬇ Export CSV</button>
   </div>
-
 </div>
+
 <script>
-// ── STORAGE KEYS
-const K_TASKS  = 'itd2-tasks';
-const K_STATES = 'itd2-states';
-const K_SCAN   = 'itd2-scan';
-const K_GH_TOK = 'itd2-gh-token';
-const K_GH_REPO= 'itd2-gh-repo';
+const K_TASKS='itd3-tasks', K_STATES='itd3-states', K_SCAN='itd3-scan', K_REPO='itd3-repo';
+let tasks=[], states={}, activeFilter='open';
 
-let tasks = [];
-let states = {};
-let activeFilter = 'all';
-
-// ── INIT
 window.onload = () => {
   document.getElementById('dateLabel').textContent = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  const repo = localStorage.getItem(K_REPO) || 'marieh-web/inbox-todo';
+  document.getElementById('ghRepo').value = repo;
   try { states = JSON.parse(localStorage.getItem(K_STATES)||'{}'); } catch(e){}
-
-  // Pre-fill settings fields
-  const tok = localStorage.getItem(K_GH_TOK);
-  const repo = localStorage.getItem(K_GH_REPO);
-  if (tok) document.getElementById('ghToken').value = tok;
-  if (repo) document.getElementById('ghRepo').value = repo;
-
-  // Try to load tasks from localStorage first (fast)
   try {
     const saved = JSON.parse(localStorage.getItem(K_TASKS)||'null');
-    if (saved && saved.length) { tasks = saved; showUI(); renderTable(); }
+    if (saved && saved.length) { tasks=saved; showUI(); renderTable(); }
   } catch(e){}
-
-  // Then try to fetch fresh from GitHub (tasks.json in repo)
   fetchFromGitHub();
-
   const sc = localStorage.getItem(K_SCAN);
-  if (sc) document.getElementById('scanInfo').textContent = 'Last scanned: ' + sc;
+  if (sc) document.getElementById('scanInfo').textContent = 'Last scanned: '+sc;
 };
 
-// ── FETCH FROM GITHUB (no API key needed — public repo)
 async function fetchFromGitHub() {
-  const repo = localStorage.getItem(K_GH_REPO) || 'marieh-web/inbox-todo';
+  const repo = localStorage.getItem(K_REPO)||'marieh-web/inbox-todo';
   try {
     const r = await fetch(`https://raw.githubusercontent.com/${repo}/main/tasks.json?t=${Date.now()}`);
     if (!r.ok) return;
     const data = await r.json();
-    if (data.tasks && Array.isArray(data.tasks)) {
-      // Merge: keep local notes/status, use fresh task data
-      const fresh = data.tasks;
-      const existMap = {};
-      tasks.forEach(t => { existMap[tkey(t)] = t; });
-      fresh.forEach(t => {
-        const k = tkey(t);
-        if (!existMap[k]) tasks.push(t);
-        else { existMap[k].priority=t.priority; existMap[k].action=t.action; existMap[k].due=t.due; }
-      });
-      localStorage.setItem(K_TASKS, JSON.stringify(tasks));
-      if (data.scanned_at) {
-        localStorage.setItem(K_SCAN, data.scanned_at);
-        document.getElementById('scanInfo').textContent = 'Last scanned: ' + data.scanned_at;
+    if (!data.tasks) return;
+    // Merge fresh tasks, preserve local notes/status, apply default_status if no local state
+    const existMap = {};
+    tasks.forEach(t => { existMap[tkey(t)] = t; });
+    data.tasks.forEach(t => {
+      const k = tkey(t);
+      if (!existMap[k]) {
+        tasks.push(t);
+        // Apply default_status from JSON if no local state exists
+        if (t.default_status && !states[k]) {
+          states[k] = { status: t.default_status };
+        }
+      } else {
+        existMap[k].priority = t.priority;
+        existMap[k].action   = t.action;
+        existMap[k].due      = t.due;
+        // Apply default_status only if user hasn't manually set a status
+        if (t.default_status && !states[k]) {
+          states[k] = { status: t.default_status };
+        }
       }
-      document.getElementById('howItWorks').style.display = 'none';
-      showUI(); renderTable();
+    });
+    localStorage.setItem(K_TASKS, JSON.stringify(tasks));
+    localStorage.setItem(K_STATES, JSON.stringify(states));
+    if (data.scanned_at) {
+      localStorage.setItem(K_SCAN, data.scanned_at);
+      document.getElementById('scanInfo').textContent = 'Last scanned: '+data.scanned_at;
     }
-  } catch(e) { /* silent — works offline from localStorage */ }
+    document.getElementById('howItWorks').style.display = 'none';
+    showUI(); renderTable();
+  } catch(e) {}
 }
 
-function tkey(t) { return (t.subject+t.from).toLowerCase().replace(/\W/g,'').slice(0,50); }
+function tkey(t){ return (t.subject+t.from).toLowerCase().replace(/\W/g,'').slice(0,50); }
 
-// ── SETTINGS
-function openSetup() { document.getElementById('setupCard').style.display = 'block'; }
-function closeSetup() { document.getElementById('setupCard').style.display = 'none'; }
-function saveSettings() {
-  localStorage.setItem(K_GH_TOK,  document.getElementById('ghToken').value.trim());
-  localStorage.setItem(K_GH_REPO, document.getElementById('ghRepo').value.trim());
-  const p = document.getElementById('settingsSaved');
-  p.style.display = 'inline-flex';
-  setTimeout(() => p.style.display = 'none', 2000);
+function openSetup(){ document.getElementById('setupCard').style.display='block'; }
+function closeSetup(){ document.getElementById('setupCard').style.display='none'; }
+function saveSettings(){
+  localStorage.setItem(K_REPO, document.getElementById('ghRepo').value.trim());
+  const p=document.getElementById('settingsSaved'); p.style.display='inline-flex';
+  setTimeout(()=>p.style.display='none',2000);
 }
 
-// ── UI
-function showUI() {
-  document.getElementById('statsRow').style.display = 'grid';
-  document.getElementById('toolbarRow').style.display = 'flex';
-  document.getElementById('bottomBar').style.display = 'flex';
-  document.getElementById('exportBtn').style.display = 'inline-flex';
+function showUI(){
+  document.getElementById('statsRow').style.display='grid';
+  document.getElementById('toolbarRow').style.display='flex';
+  document.getElementById('bottomBar').style.display='flex';
+  document.getElementById('exportBtn').style.display='inline-flex';
   updateStats();
 }
 
-function updateStats() {
-  document.getElementById('sHigh').textContent  = tasks.filter(t=>t.priority==='high').length;
-  document.getElementById('sMed').textContent   = tasks.filter(t=>t.priority==='medium').length;
-  document.getElementById('sFyi').textContent   = tasks.filter(t=>t.priority==='fyi').length;
-  document.getElementById('sDone').textContent  = tasks.filter(t=>states[tkey(t)]?.status==='Done').length;
-  document.getElementById('sTotal').textContent = tasks.length;
+function updateStats(){
+  const open = tasks.filter(t=>!['Done','Archived'].includes(states[tkey(t)]?.status));
+  document.getElementById('sHigh').textContent    = open.filter(t=>t.priority==='high').length;
+  document.getElementById('sMed').textContent     = open.filter(t=>t.priority==='medium').length;
+  document.getElementById('sFyi').textContent     = open.filter(t=>t.priority==='fyi').length;
+  document.getElementById('sDone').textContent    = tasks.filter(t=>states[tkey(t)]?.status==='Done').length;
+  document.getElementById('sArchived').textContent= tasks.filter(t=>states[tkey(t)]?.status==='Archived').length;
+  document.getElementById('sTotal').textContent   = tasks.length;
 }
 
-function setFilter(f, el) {
-  activeFilter = f;
+function setFilter(f,el){
+  activeFilter=f;
   document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
   el.classList.add('active');
   renderTable();
 }
 
-function renderTable() {
+function renderTable(){
   let list = [...tasks];
-  if (activeFilter==='high')   list = list.filter(t=>t.priority==='high');
-  else if (activeFilter==='medium') list = list.filter(t=>t.priority==='medium');
-  else if (activeFilter==='fyi')    list = list.filter(t=>t.priority==='fyi');
-  else if (activeFilter==='open')   list = list.filter(t=>states[tkey(t)]?.status !== 'Done');
-  else if (activeFilter==='done')   list = list.filter(t=>states[tkey(t)]?.status === 'Done');
+  const getStatus = t => states[tkey(t)]?.status || t.default_status || 'Open';
+  if      (activeFilter==='open')     list = list.filter(t=>!['Done','Archived'].includes(getStatus(t)));
+  else if (activeFilter==='high')     list = list.filter(t=>t.priority==='high' && !['Done','Archived'].includes(getStatus(t)));
+  else if (activeFilter==='medium')   list = list.filter(t=>t.priority==='medium' && !['Done','Archived'].includes(getStatus(t)));
+  else if (activeFilter==='fyi')      list = list.filter(t=>t.priority==='fyi' && !['Done','Archived'].includes(getStatus(t)));
+  else if (activeFilter==='done')     list = list.filter(t=>getStatus(t)==='Done');
+  else if (activeFilter==='archived') list = list.filter(t=>getStatus(t)==='Archived');
 
   if (!list.length) {
-    document.getElementById('emptyState').style.display = 'block';
-    document.getElementById('todoTable').style.display  = 'none';
+    document.getElementById('emptyState').style.display='block';
+    document.getElementById('todoTable').style.display='none';
+    document.getElementById('emptyState').innerHTML=`<div style="font-size:36px;margin-bottom:12px;">✅</div><h3>Nothing here</h3><p>No tasks in this view.</p>`;
     return;
   }
-  document.getElementById('emptyState').style.display = 'none';
-  document.getElementById('todoTable').style.display  = 'table';
+  document.getElementById('emptyState').style.display='none';
+  document.getElementById('todoTable').style.display='table';
 
-  const order = {high:0,medium:1,fyi:2};
-  list.sort((a,b) => (order[a.priority]||2)-(order[b.priority]||2));
+  const order={high:0,medium:1,fyi:2};
+  list.sort((a,b)=>(order[a.priority]||2)-(order[b.priority]||2));
 
-  const priCls = {high:'pri-high',medium:'pri-medium',fyi:'pri-fyi'};
-  const priLbl = {high:'High',medium:'Medium',fyi:'FYI'};
-  const stCls  = {'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked'};
+  const priCls={high:'pri-high',medium:'pri-medium',fyi:'pri-fyi'};
+  const priLbl={high:'High',medium:'Medium',fyi:'FYI'};
+  const stCls={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived'};
+  const rowCls={'Done':'done-row','Archived':'archive-row'};
 
-  document.getElementById('todoBody').innerHTML = list.map((t,i) => {
-    const k = tkey(t);
-    const st = states[k]||{};
-    const status = st.status||'Open';
-    const note   = st.note||'';
-    const url = t.thread_id
-      ? `https://mail.google.com/mail/u/0/#inbox/${t.thread_id}`
-      : `https://mail.google.com/mail/u/0/#search/${encodeURIComponent(t.subject)}`;
-    const sk = k.replace(/[^a-z0-9]/g,'');
-    return `<tr class="${status==='Done'?'done-row':''}" id="row-${sk}">
+  document.getElementById('todoBody').innerHTML = list.map((t,i)=>{
+    const k=tkey(t), st=states[k]||{};
+    const status = st.status || t.default_status || 'Open';
+    const note=st.note||'';
+    const url=t.thread_id
+      ?`https://mail.google.com/mail/u/0/#inbox/${t.thread_id}`
+      :`https://mail.google.com/mail/u/0/#search/${encodeURIComponent(t.subject)}`;
+    const sk=k.replace(/[^a-z0-9]/g,'');
+    const rc=rowCls[status]||'';
+    return `<tr class="${rc}" id="row-${sk}">
       <td>${i+1}</td>
       <td><span class="pri ${priCls[t.priority]||'pri-fyi'}">${priLbl[t.priority]||'FYI'}</span></td>
       <td><a class="subj-link" href="${url}" target="_blank">${esc(t.subject)}</a></td>
@@ -352,63 +316,59 @@ function renderTable() {
           <option ${status==='In Progress'?'selected':''}>In Progress</option>
           <option ${status==='Done'?'selected':''}>Done</option>
           <option ${status==='Blocked'?'selected':''}>Blocked</option>
+          <option ${status==='Archived'?'selected':''}>Archived</option>
         </select>
       </td>
       <td>
         <textarea class="notes" rows="1" placeholder="Add notes..."
-          oninput="autoResize(this);updateNote('${k}',this.value)">${esc(note)}</textarea>
+          oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px';updateNote('${k}',this.value)"
+        >${esc(note)}</textarea>
         <span class="saved-flash" id="sf-${sk}">✓ saved</span>
       </td>
     </tr>`;
   }).join('');
-
-  document.querySelectorAll('textarea.notes').forEach(autoResize);
+  document.querySelectorAll('textarea.notes').forEach(el=>{el.style.height='auto';el.style.height=el.scrollHeight+'px';});
 }
 
 function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function autoResize(el){ el.style.height='auto'; el.style.height=el.scrollHeight+'px'; }
 
-// ── STATE OPS
-function updateStatus(k, sel) {
-  const sc = {'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked'};
-  sel.className = 'status-sel '+(sc[sel.value]||'s-open');
+function updateStatus(k,sel){
+  const sc={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived'};
+  const rc={'Done':'done-row','Archived':'archive-row'};
+  sel.className='status-sel '+(sc[sel.value]||'s-open');
   if (!states[k]) states[k]={};
-  states[k].status = sel.value;
+  states[k].status=sel.value;
   saveStates(); updateStats();
-  const sk = k.replace(/[^a-z0-9]/g,'');
-  const row = document.getElementById('row-'+sk);
-  if (row) { row.className = sel.value==='Done'?'done-row':''; }
-  const link = row?.querySelector('.subj-link');
-  if (link) link.style.textDecoration = sel.value==='Done'?'line-through':'none';
+  const sk=k.replace(/[^a-z0-9]/g,'');
+  const row=document.getElementById('row-'+sk);
+  if (row) row.className=rc[sel.value]||'';
+  // Re-render if in a filtered view and item no longer belongs
+  if (['open','high','medium','fyi'].includes(activeFilter) && ['Done','Archived'].includes(sel.value)) {
+    setTimeout(renderTable, 300);
+  }
 }
 
-let noteTimers = {};
-function updateNote(k, val) {
+let noteTimers={};
+function updateNote(k,val){
   if (!states[k]) states[k]={};
-  states[k].note = val;
+  states[k].note=val;
   clearTimeout(noteTimers[k]);
-  noteTimers[k] = setTimeout(() => {
+  noteTimers[k]=setTimeout(()=>{
     saveStates();
-    const sk = k.replace(/[^a-z0-9]/g,'');
-    const el = document.getElementById('sf-'+sk);
-    if (el){ el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),1500); }
-  }, 600);
+    const sk=k.replace(/[^a-z0-9]/g,'');
+    const el=document.getElementById('sf-'+sk);
+    if(el){el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1500);}
+  },600);
 }
 
-function saveStates(){ localStorage.setItem(K_STATES, JSON.stringify(states)); }
+function saveStates(){ localStorage.setItem(K_STATES,JSON.stringify(states)); }
 
-function clearDone(){
-  tasks.forEach(t=>{ const k=tkey(t); if(states[k]?.status==='Done') states[k].status='Open'; });
-  saveStates(); updateStats(); renderTable();
-}
-
-// ── EXPORT CSV
 function exportCSV(){
   const headers=['#','Priority','Subject','Gmail Link','From','Action Needed','Due','Status','Notes'];
-  const rows = tasks.map((t,i)=>{
-    const k=tkey(t); const st=states[k]||{};
+  const rows=tasks.map((t,i)=>{
+    const k=tkey(t),st=states[k]||{};
     const url=t.thread_id?`https://mail.google.com/mail/u/0/#inbox/${t.thread_id}`:'';
-    return [i+1,t.priority,t.subject,url,t.from,t.action,t.due,st.status||'Open',st.note||''];
+    return [i+1,t.priority,t.subject,url,t.from,t.action,t.due,st.status||t.default_status||'Open',st.note||''];
   });
   const csv=[headers,...rows].map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
   const a=document.createElement('a');
