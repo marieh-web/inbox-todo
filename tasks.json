@@ -1,6 +1,14 @@
 {
-  "scanned_at": "Jun 6, 2026 \u00b7 30-day full scan (updated)",
+  "scanned_at": "Jun 6, 2026 \u00b7 full scan (to:marieh verified)",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "CitiDirect\u00ae Event Notification \u2013 funds transfer",
+      "from": "CitiDirectbe.notifications@citi.com",
+      "action": "Review CitiDirect event notification for third-party fund transfer \u2014 confirm transaction is legitimate",
+      "due": "Today",
+      "thread_id": "19e73acc93b1089c"
+    },
     {
       "priority": "high",
       "subject": "Scribd \u2013 December 2025 Complementary Tax payment",
@@ -144,6 +152,14 @@
       "action": "Review May monthly statement; confirm scheduled payments are processing correctly",
       "due": "ASAP",
       "thread_id": "19e81ac81a175de4"
+    },
+    {
+      "priority": "medium",
+      "subject": "AI Session canceled by Jeroen \u2013 'We continue after the audit'",
+      "from": "jeroeng@scribd.com",
+      "action": "Note AI Session was canceled pending audit completion \u2014 follow up with Jeroen to reschedule",
+      "due": "This week",
+      "thread_id": "19e89ee4eab8e887"
     },
     {
       "priority": "medium",
@@ -328,6 +344,14 @@
       "action": "Optional: Register for Citi Online Academy Trade Tech Series Part 2 webinar",
       "due": "\u2014",
       "thread_id": "19e93799635b19d5"
+    },
+    {
+      "priority": "fyi",
+      "subject": "GitHub \u2013 Personal access token 'inbox-todo' added",
+      "from": "noreply@github.com",
+      "action": "Revoke and rotate the GitHub token used for inbox-todo app \u2014 security best practice after sharing",
+      "due": "ASAP",
+      "thread_id": "19e9bf8635d082fe"
     }
   ]
 }
