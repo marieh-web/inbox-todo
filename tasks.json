@@ -1,0 +1,125 @@
+{
+  "scanned_at": "Jun 6, 2026 · 02:45 PM",
+  "tasks": [
+    {
+      "priority": "high",
+      "subject": "CitiDirect encrypted message expiring soon",
+      "from": "citidirect.onlinebanking@citi.com",
+      "action": "Open and read encrypted Citi banking message before it expires",
+      "due": "Today",
+      "thread_id": "19e9be0cc2b3a417"
+    },
+    {
+      "priority": "high",
+      "subject": "Journal Entry Rejected (x2) – NetSuite",
+      "from": "system@sent-via.netsuite.com",
+      "action": "Review rejection reason in NetSuite, edit and resubmit journal entry for approval",
+      "due": "Today",
+      "thread_id": "19e9aa5c4240a68b"
+    },
+    {
+      "priority": "high",
+      "subject": "Okta: GitHub - Scribd access request #2535",
+      "from": "noreply@at.okta.com",
+      "action": "Approve or deny GitHub - Scribd access request in Okta",
+      "due": "Today",
+      "thread_id": "19e9a7cb887bfca5"
+    },
+    {
+      "priority": "high",
+      "subject": "GitHub org invitations (scribd, SlideShareCorp, fablegroup)",
+      "from": "noreply@github.com",
+      "action": "Accept all 3 GitHub org invitations from scribd-itops",
+      "due": "Today",
+      "thread_id": "19e9a7c8762f1519"
+    },
+    {
+      "priority": "high",
+      "subject": "Okta: Zapier access request #2533",
+      "from": "noreply@at.okta.com",
+      "action": "Approve or deny Zapier access request in Okta",
+      "due": "Today",
+      "thread_id": "19e9a496e4f1b5d6"
+    },
+    {
+      "priority": "high",
+      "subject": "Alabama Taxes Payment Reminder – May 2026",
+      "from": "taxes@scribd.com",
+      "action": "Review balance vs scheduled payments; submit payment if needed",
+      "due": "Today",
+      "thread_id": "19e9a06b229cb30e"
+    },
+    {
+      "priority": "high",
+      "subject": "Bill returned to AP – Recode Fable COGS",
+      "from": "noreply@tipalti.com",
+      "action": "Recode Fable COGS bill and resubmit to AP",
+      "due": "Today",
+      "thread_id": "19e9860ea04fe79f"
+    },
+    {
+      "priority": "medium",
+      "subject": "Concur expense routing to wrong manager",
+      "from": "time@scribd.com",
+      "action": "Fix Concur reporting line so expense routes to Mike instead of Ruslana",
+      "due": "ASAP",
+      "thread_id": "19e98ac5d977f243"
+    },
+    {
+      "priority": "medium",
+      "subject": "US SUT Filing – Avalara May 2026",
+      "from": "ak.buenavista@unified-accounting.com",
+      "action": "Review Liability Statement Summary comparing Avalara vs Databricks amounts",
+      "due": "This week",
+      "thread_id": "19e97365ef905414"
+    },
+    {
+      "priority": "medium",
+      "subject": "Avalara TAP Security Code – Mississippi DOR",
+      "from": "no-reply@compliance.avalara.com",
+      "action": "Confirm this security code was expected; check Mississippi tax filing status",
+      "due": "Today",
+      "thread_id": "19e98d6bc1a4a391"
+    },
+    {
+      "priority": "fyi",
+      "subject": "SVB Payment Notifications (x3)",
+      "from": "onlinebanking@svb.com",
+      "action": "Review payment notifications: HMRC VAT, Tollstjori, and Tipalti Inc.",
+      "due": "Today",
+      "thread_id": "19e9999ac15782bc"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Confluence comments – Discrete Workspaces & more",
+      "from": "confluence@scribdjira.atlassian.net",
+      "action": "Review inline comment updates on Discrete Workspaces, Swap Ask AI, and Imported Collections briefs",
+      "due": "This week",
+      "thread_id": "19e984e6c13b80a8"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Claude Day – Finance & Accounting recap",
+      "from": "laurelm@scribd.com",
+      "action": "Read recap thread from Laurel and Mary; no action needed unless follow-up required",
+      "due": "—",
+      "thread_id": "19e907d8b2bb89dc"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Finance + Accounting Claude Day meeting notes",
+      "from": "gemini-notes@google.com",
+      "action": "Review auto-generated meeting notes from June 5 session",
+      "due": "—",
+      "thread_id": "19e998c8bd81ffff"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Proofpoint quarantine digest",
+      "from": "proofpointquarantine@scribd.com",
+      "action": "Check quarantine digest for any legitimate emails",
+      "due": "Today",
+      "thread_id": "19e981175222129a"
+    }
+  ]
+}
