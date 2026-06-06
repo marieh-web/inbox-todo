@@ -1,6 +1,14 @@
 {
-  "scanned_at": "Jun 6, 2026 \u00b7 30-day full scan",
+  "scanned_at": "Jun 6, 2026 \u00b7 30-day full scan (updated)",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "Scribd \u2013 December 2025 Complementary Tax payment",
+      "from": "jent@scribd.com (Jennyly)",
+      "action": "Schedule December 2025 complementary tax payment and notify Jeroen for bank approval \u2014 you were directly tagged by Jennyly",
+      "due": "ASAP",
+      "thread_id": "19e89d80a3b7a7f1"
+    },
     {
       "priority": "high",
       "subject": "Journal Entry Rejected (x4) \u2013 NetSuite",
