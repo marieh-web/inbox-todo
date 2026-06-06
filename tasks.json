@@ -1,21 +1,21 @@
 {
-  "scanned_at": "Jun 6, 2026 · 02:45 PM",
+  "scanned_at": "Jun 6, 2026 \u00b7 30-day full scan",
   "tasks": [
     {
       "priority": "high",
-      "subject": "CitiDirect encrypted message expiring soon",
+      "subject": "Journal Entry Rejected (x4) \u2013 NetSuite",
+      "from": "system@sent-via.netsuite.com",
+      "action": "Review rejection reasons in NetSuite, edit and resubmit all journal entries for approval",
+      "due": "Today",
+      "thread_id": "19e9aa5c4240a68b"
+    },
+    {
+      "priority": "high",
+      "subject": "CitiDirect encrypted message \u2013 expiring soon",
       "from": "citidirect.onlinebanking@citi.com",
       "action": "Open and read encrypted Citi banking message before it expires",
       "due": "Today",
       "thread_id": "19e9be0cc2b3a417"
-    },
-    {
-      "priority": "high",
-      "subject": "Journal Entry Rejected (x2) – NetSuite",
-      "from": "system@sent-via.netsuite.com",
-      "action": "Review rejection reason in NetSuite, edit and resubmit journal entry for approval",
-      "due": "Today",
-      "thread_id": "19e9aa5c4240a68b"
     },
     {
       "priority": "high",
@@ -43,66 +43,250 @@
     },
     {
       "priority": "high",
-      "subject": "Alabama Taxes Payment Reminder – May 2026",
+      "subject": "Alabama Taxes Payment Reminder \u2013 May 2026",
       "from": "taxes@scribd.com",
-      "action": "Review balance vs scheduled payments; submit payment if needed",
+      "action": "Review balance vs scheduled payments and submit payment if needed",
       "due": "Today",
       "thread_id": "19e9a06b229cb30e"
     },
     {
       "priority": "high",
-      "subject": "Bill returned to AP – Recode Fable COGS",
+      "subject": "Bill returned to AP \u2013 Recode Fable COGS (x2)",
       "from": "noreply@tipalti.com",
-      "action": "Recode Fable COGS bill and resubmit to AP",
+      "action": "Recode both Fable COGS bills (df5ceef9 and ef3c9c1f) and resubmit to AP",
       "due": "Today",
       "thread_id": "19e9860ea04fe79f"
+    },
+    {
+      "priority": "high",
+      "subject": "Minnesota Sales & Use Tax due June 22",
+      "from": "mnrevenue@public.govdelivery.com",
+      "action": "File monthly Sales and Use Tax return for May \u2014 due June 22, 2026",
+      "due": "Jun 22",
+      "thread_id": "19e92d5d9c7f4cb3"
+    },
+    {
+      "priority": "high",
+      "subject": "BC PST filing \u2013 period ending May 31, 2026",
+      "from": "taxes@scribd.com",
+      "action": "File and pay PST for May 31 period \u2014 due June 30, 2026",
+      "due": "Jun 30",
+      "thread_id": "19e8738f352b918d"
+    },
+    {
+      "priority": "high",
+      "subject": "Maine Tax Portal \u2013 new correspondence",
+      "from": "taxes@scribd.com",
+      "action": "Log into Maine Tax Portal and review new correspondence from Maine Revenue Services",
+      "due": "ASAP",
+      "thread_id": "19e85a016df36d80"
+    },
+    {
+      "priority": "high",
+      "subject": "Malaysia SToDS webinar invitation",
+      "from": "taxes@scribd.com",
+      "action": "Review webinar invite for Service Tax on Digital Services (SToDS) Knowledge Refresher",
+      "due": "ASAP",
+      "thread_id": "19e8bb1bf45adbb4"
+    },
+    {
+      "priority": "high",
+      "subject": "Scribd NL BV \u2013 Zwitserleven credit notes (ongoing since Jul 2025)",
+      "from": "prelisha@firsteuropean.com",
+      "action": "Review and process Zwitserleven credit notes \u2014 unresolved since July 2025, not processed in Tipalti",
+      "due": "ASAP",
+      "thread_id": "197d52ed71570d57"
+    },
+    {
+      "priority": "high",
+      "subject": "Scribd NL \u2013 Q1 2026 VAT return forwarded by Mary",
+      "from": "marys@scribd.com",
+      "action": "Review forwarded Q1 2026 NL VAT return from First European \u2014 confirm no payment needed",
+      "due": "ASAP",
+      "thread_id": "19e8b1290e21e911"
+    },
+    {
+      "priority": "high",
+      "subject": "GitHub Actions storage at 100% \u2013 Scribd Enterprise",
+      "from": "invoices@scribd.com",
+      "action": "Address GitHub Actions storage at 100% to prevent CI/CD failures",
+      "due": "ASAP",
+      "thread_id": "19e860f920abb665"
+    },
+    {
+      "priority": "high",
+      "subject": "GitHub Actions minutes at 90% \u2013 Scribd Enterprise",
+      "from": "invoices@scribd.com",
+      "action": "Monitor GitHub Actions minutes usage \u2014 at 90%, may need additional capacity",
+      "due": "This week",
+      "thread_id": "19e8dee2b029360a"
+    },
+    {
+      "priority": "high",
+      "subject": "Cooley LLP \u2013 Invoices 3141557 & 3141558 approved",
+      "from": "invoicestatus@mail.onit.com",
+      "action": "Enter both Cooley LLP approved invoices into AP system and mark as Paid in Onit",
+      "due": "ASAP",
+      "thread_id": "19e8446fdcd267f7"
+    },
+    {
+      "priority": "high",
+      "subject": "Ramp \u2013 May 2026 monthly statement ($232,039.70)",
+      "from": "communications@ramp.com",
+      "action": "Review May monthly statement; confirm scheduled payments are processing correctly",
+      "due": "ASAP",
+      "thread_id": "19e81ac81a175de4"
     },
     {
       "priority": "medium",
       "subject": "Concur expense routing to wrong manager",
       "from": "time@scribd.com",
-      "action": "Fix Concur reporting line so expense routes to Mike instead of Ruslana",
+      "action": "Fix Concur reporting line so expenses route to Mike instead of Ruslana",
       "due": "ASAP",
       "thread_id": "19e98ac5d977f243"
     },
     {
       "priority": "medium",
-      "subject": "US SUT Filing – Avalara May 2026",
+      "subject": "US SUT Filing \u2013 Avalara May 2026",
       "from": "ak.buenavista@unified-accounting.com",
-      "action": "Review Liability Statement Summary comparing Avalara vs Databricks amounts",
+      "action": "Review Liability Statement Summary comparing Avalara vs Databricks tax amounts",
       "due": "This week",
       "thread_id": "19e97365ef905414"
     },
     {
       "priority": "medium",
-      "subject": "Avalara TAP Security Code – Mississippi DOR",
+      "subject": "India GST May 2026 \u2013 Sales Data",
+      "from": "jj.antioquia@unified-accounting.com",
+      "action": "Confirm sales data submitted to India tax consultant is correct (5% all sales, 18% Everand)",
+      "due": "This week",
+      "thread_id": "19e95eadba9d76df"
+    },
+    {
+      "priority": "medium",
+      "subject": "Avalara TAP Security Code \u2013 Mississippi DOR",
       "from": "no-reply@compliance.avalara.com",
-      "action": "Confirm this security code was expected; check Mississippi tax filing status",
-      "due": "Today",
+      "action": "Verify this security code was expected; check Mississippi tax filing status in Avalara",
+      "due": "ASAP",
       "thread_id": "19e98d6bc1a4a391"
     },
     {
-      "priority": "fyi",
-      "subject": "SVB Payment Notifications (x3)",
+      "priority": "medium",
+      "subject": "Tipalti AP Hub reports generated (May 2026)",
+      "from": "noreply@tipalti.com",
+      "action": "Download and review May reconciliation and account statement reports from Tipalti AP Hub",
+      "due": "This week",
+      "thread_id": "19e8af908fe5fa16"
+    },
+    {
+      "priority": "medium",
+      "subject": "EY Audit \u2013 D&O Questionnaire viewed by Geoffrey Yang",
+      "from": "dse_NA3@docusign.net",
+      "action": "Confirm D&O Questionnaire status with EY audit team; check if any follow-up needed",
+      "due": "This week",
+      "thread_id": "19e8a3305b2e99f1"
+    },
+    {
+      "priority": "medium",
+      "subject": "Docusign: Jeroen viewed 2025 T2200 \u2013 Shreyansh Banthia",
+      "from": "dse_NA3@docusign.net",
+      "action": "Confirm T2200 document was reviewed by Jeroen and check if signature/action is pending",
+      "due": "This week",
+      "thread_id": "19e94cb33c9840d1"
+    },
+    {
+      "priority": "medium",
+      "subject": "UAE VAT payment received \u2013 AED 46,997.36",
+      "from": "taxes@scribd.com",
+      "action": "Confirm UAE VAT payment receipt is recorded correctly in the AP system",
+      "due": "This week",
+      "thread_id": "19e833b20cb674b9"
+    },
+    {
+      "priority": "medium",
+      "subject": "IRS EFTPS \u2013 Scheduled transaction confirmed",
+      "from": "taxes@scribd.com",
+      "action": "Verify IRS EFTPS scheduled transaction (Conf# 270-6552-8244-7273) is reflected in records",
+      "due": "This week",
+      "thread_id": "19e8364aa5d6f78c"
+    },
+    {
+      "priority": "medium",
+      "subject": "Saudi Arabia SADAD invoice \u2013 \u0641\u0627\u062a\u0648\u0631\u0629 \u0646\u0638\u0627\u0645 \u0627\u0644\u0645\u062f\u0641\u0648\u0639\u0627\u062a",
+      "from": "taxes@scribd.com",
+      "action": "Review and process Saudi SADAD payment invoice #3114837801",
+      "due": "ASAP",
+      "thread_id": "19e961352fa34b19"
+    },
+    {
+      "priority": "medium",
+      "subject": "Ramp weekly digest \u2013 $49,043 spend",
+      "from": "communications@ramp.com",
+      "action": "Review weekly Ramp spend digest and check for any unusual transactions",
+      "due": "This week",
+      "thread_id": "19e8d013dd60481f"
+    },
+    {
+      "priority": "medium",
+      "subject": "SVB May deposit account statements ready (x5)",
       "from": "onlinebanking@svb.com",
-      "action": "Review payment notifications: HMRC VAT, Tollstjori, and Tipalti Inc.",
+      "action": "Download and review May account statements for all SVB accounts (Scribd Inc, NL BV, Fable)",
+      "due": "This week",
+      "thread_id": "19e864d4d59cf194"
+    },
+    {
+      "priority": "fyi",
+      "subject": "SVB payment notifications (x5 this week)",
+      "from": "onlinebanking@svb.com",
+      "action": "Review payment notifications: HMRC VAT, Tollstjori, Tipalti Inc., Belastingdienst, Tentoo",
       "due": "Today",
       "thread_id": "19e9999ac15782bc"
     },
     {
       "priority": "fyi",
-      "subject": "Confluence comments – Discrete Workspaces & more",
+      "subject": "Concur \u2013 Sarvesh, Karishma, Will added (resolved)",
+      "from": "expenses@scribd.com",
+      "action": "Confirm all 3 new Concur accounts (Sarvesh, Karishma, Will) are active \u2014 India Rickman handled",
+      "due": "\u2014",
+      "thread_id": "19e8e3c7cb44601f"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Concur \u2013 Sarah McC routing fixed (resolved)",
+      "from": "indiar@scribd.com",
+      "action": "Confirm Sarah's Concur approver has been updated to Ed \u2014 marked resolved",
+      "due": "\u2014",
+      "thread_id": "19e7667e47b72cba"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Confluence \u2013 Discrete Workspaces, Swap Ask AI, Imported Collections comments",
       "from": "confluence@scribdjira.atlassian.net",
-      "action": "Review inline comment updates on Discrete Workspaces, Swap Ask AI, and Imported Collections briefs",
+      "action": "Review inline comment updates across product briefs if you are a stakeholder",
       "due": "This week",
       "thread_id": "19e984e6c13b80a8"
     },
     {
       "priority": "fyi",
-      "subject": "Claude Day – Finance & Accounting recap",
+      "subject": "Confluence \u2013 Enable Multiple Projects in Workspaces comments",
+      "from": "confluence@scribdjira.atlassian.net",
+      "action": "Review inline comment updates on Enable Multiple Projects brief",
+      "due": "This week",
+      "thread_id": "19e93811516c9d76"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Confluence \u2013 RFC: Doc Page redux data shape comments",
+      "from": "confluence@scribdjira.atlassian.net",
+      "action": "Review inline comment updates on RFC Doc Page redux data shape",
+      "due": "This week",
+      "thread_id": "19e896fd1ec4ba17"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Claude Day \u2013 Finance & Accounting recap",
       "from": "laurelm@scribd.com",
-      "action": "Read recap thread from Laurel and Mary; no action needed unless follow-up required",
-      "due": "—",
+      "action": "Read recap thread from Laurel and Mary; follow up if needed",
+      "due": "\u2014",
       "thread_id": "19e907d8b2bb89dc"
     },
     {
@@ -110,16 +294,32 @@
       "subject": "Finance + Accounting Claude Day meeting notes",
       "from": "gemini-notes@google.com",
       "action": "Review auto-generated meeting notes from June 5 session",
-      "due": "—",
+      "due": "\u2014",
       "thread_id": "19e998c8bd81ffff"
     },
     {
       "priority": "fyi",
-      "subject": "Proofpoint quarantine digest",
+      "subject": "Proofpoint quarantine digests (x3)",
       "from": "proofpointquarantine@scribd.com",
-      "action": "Check quarantine digest for any legitimate emails",
+      "action": "Check quarantine digests for any legitimate emails held in filter",
       "due": "Today",
       "thread_id": "19e981175222129a"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Citi digital banking feedback survey",
+      "from": "citiclientfeedback@citi.com",
+      "action": "Optional: Complete Citi feedback survey on digital banking products",
+      "due": "\u2014",
+      "thread_id": "19e88aabfbe175cf"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Citi Trade Tech webinar invitation",
+      "from": "servicescomms@citi.com",
+      "action": "Optional: Register for Citi Online Academy Trade Tech Series Part 2 webinar",
+      "due": "\u2014",
+      "thread_id": "19e93799635b19d5"
     }
   ]
 }
