@@ -1,5 +1,5 @@
 {
-  "scanned_at": "Jun 6, 2026 \u00b7 full scan (statuses applied)",
+  "scanned_at": "Jun 6, 2026 \u00b7 full scan (Done reset for review)",
   "tasks": [
     {
       "priority": "high",
@@ -223,8 +223,7 @@
       "from": "taxes@scribd.com",
       "action": "Confirm UAE VAT payment receipt is recorded correctly in the AP system",
       "due": "This week",
-      "thread_id": "19e833b20cb674b9",
-      "default_status": "Done"
+      "thread_id": "19e833b20cb674b9"
     },
     {
       "priority": "medium",
@@ -232,8 +231,7 @@
       "from": "taxes@scribd.com",
       "action": "Verify IRS EFTPS scheduled transaction (Conf# 270-6552-8244-7273) is reflected in records",
       "due": "This week",
-      "thread_id": "19e8364aa5d6f78c",
-      "default_status": "Done"
+      "thread_id": "19e8364aa5d6f78c"
     },
     {
       "priority": "medium",
@@ -276,8 +274,7 @@
       "from": "expenses@scribd.com",
       "action": "Confirm all 3 new Concur accounts (Sarvesh, Karishma, Will) are active \u2014 India Rickman handled",
       "due": "\u2014",
-      "thread_id": "19e8e3c7cb44601f",
-      "default_status": "Done"
+      "thread_id": "19e8e3c7cb44601f"
     },
     {
       "priority": "fyi",
@@ -285,8 +282,7 @@
       "from": "indiar@scribd.com",
       "action": "Confirm Sarah's Concur approver has been updated to Ed \u2014 marked resolved",
       "due": "\u2014",
-      "thread_id": "19e7667e47b72cba",
-      "default_status": "Done"
+      "thread_id": "19e7667e47b72cba"
     },
     {
       "priority": "fyi",
@@ -363,8 +359,7 @@
       "from": "noreply@github.com",
       "action": "Revoke and rotate the GitHub token used for inbox-todo app \u2014 security best practice after sharing",
       "due": "ASAP",
-      "thread_id": "19e9bf8635d082fe",
-      "default_status": "Done"
+      "thread_id": "19e9bf8635d082fe"
     }
   ]
 }
