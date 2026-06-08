@@ -151,6 +151,7 @@
       <span class="chip" onclick="setFilter('medium',this)">🟠 Medium</span>
       <span class="chip" onclick="setFilter('fyi',this)">🔵 FYI</span>
       <span class="chip" onclick="setFilter('done',this)">✅ Done</span>
+      <span class="chip" onclick="setFilter('progress',this)">🔄 In Progress</span>
       <span class="chip" onclick="setFilter('archived',this)">🗄 Archived</span>
       <span class="chip" onclick="setFilter('payroll',this)">💜 Payroll</span>
       <span class="chip" onclick="setFilter('tax',this)">🟠 Tax Pmt</span>
@@ -278,10 +279,11 @@ function setFilter(f,el){
 function renderTable(){
   let list = [...tasks];
   const getStatus = t => states[tkey(t)]?.status || t.default_status || 'Open';
-  if      (activeFilter==='open')     list = list.filter(t=>!['Done','Archived','Payroll','Tax Payment'].includes(getStatus(t)));
-  else if (activeFilter==='high')     list = list.filter(t=>t.priority==='high' && !['Done','Archived'].includes(getStatus(t)));
-  else if (activeFilter==='medium')   list = list.filter(t=>t.priority==='medium' && !['Done','Archived'].includes(getStatus(t)));
-  else if (activeFilter==='fyi')      list = list.filter(t=>t.priority==='fyi' && !['Done','Archived'].includes(getStatus(t)));
+  if      (activeFilter==='open')     list = list.filter(t=>!['Done','Archived','Payroll','Tax Payment','Blocked','In Progress'].includes(getStatus(t)));
+  else if (activeFilter==='progress') list = list.filter(t=>getStatus(t)==='In Progress');
+  else if (activeFilter==='high')     list = list.filter(t=>t.priority==='high' && !['Done','Archived','Payroll','Tax Payment','Blocked','In Progress'].includes(getStatus(t)));
+  else if (activeFilter==='medium')   list = list.filter(t=>t.priority==='medium' && !['Done','Archived','Payroll','Tax Payment','Blocked','In Progress'].includes(getStatus(t)));
+  else if (activeFilter==='fyi')      list = list.filter(t=>t.priority==='fyi' && !['Done','Archived','Payroll','Tax Payment','Blocked','In Progress'].includes(getStatus(t)));
   else if (activeFilter==='done')     list = list.filter(t=>getStatus(t)==='Done');
   else if (activeFilter==='archived') list = list.filter(t=>getStatus(t)==='Archived');
   else if (activeFilter==='payroll')  list = list.filter(t=>getStatus(t)==='Payroll');
@@ -352,7 +354,7 @@ function updateStatus(k,sel){
   saveStates(); updateStats();
 
   // Immediately fade out and remove row if status moves away from Open/In Progress
-  const removeStatuses=['Done','Archived','Payroll','Tax Payment','Blocked'];
+  const removeStatuses=['Done','Archived','Payroll','Tax Payment','Blocked','In Progress'];
   const sk=k.replace(/[^a-z0-9]/g,'');
   const row=document.getElementById('row-'+sk);
   if (row && removeStatuses.includes(sel.value)) {
