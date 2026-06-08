@@ -1,6 +1,46 @@
 {
-  "scanned_at": "Jun 6, 2026 \u00b7 full scan (Archived reset for review)",
+  "scanned_at": "Jun 8, 2026 \u00b7 live scan",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "eTaxBC \u2013 Province of BC Security Code received",
+      "from": "taxes@scribd.com",
+      "action": "Confirm BC security code 440869 was expected \u2014 check eTaxBC login and filing status",
+      "due": "Today",
+      "thread_id": "19e9bfcc1f53d679"
+    },
+    {
+      "priority": "high",
+      "subject": "CitiDirect encrypted messages (x5) \u2013 multiple expiring",
+      "from": "citidirect.onlinebanking@citi.com",
+      "action": "Open and read all pending CitiDirect encrypted messages \u2014 some marked final reminder/expiring soon",
+      "due": "Today",
+      "thread_id": "19ea64f0e9d33069"
+    },
+    {
+      "priority": "high",
+      "subject": "New York Quarterly Sales Tax due June 20, 2026",
+      "from": "taxes@scribd.com",
+      "action": "File NY State & Local Quarterly Sales Tax return (Form ST-100) \u2014 due June 20",
+      "due": "Jun 20",
+      "thread_id": "19ea1e07713d3a49"
+    },
+    {
+      "priority": "high",
+      "subject": "Texas SUT Return due June 22, 2026",
+      "from": "taxes@scribd.com",
+      "action": "File Texas Sales & Use Tax return for period ending May 31, 2026 \u2014 due June 22",
+      "due": "Jun 22",
+      "thread_id": "19ea33e1a768c861"
+    },
+    {
+      "priority": "high",
+      "subject": "Kentucky MyTaxes \u2013 New Secure Message (Return Processed)",
+      "from": "noreply.doris@ky.gov",
+      "action": "Log into MyTaxes.ky.gov portal and review secure message about processed return",
+      "due": "Today",
+      "thread_id": "19ea754704397de3"
+    },
     {
       "priority": "high",
       "subject": "CitiDirect\u00ae Event Notification \u2013 funds transfer",
@@ -352,6 +392,14 @@
       "action": "Revoke and rotate the GitHub token used for inbox-todo app \u2014 security best practice after sharing",
       "due": "ASAP",
       "thread_id": "19e9bf8635d082fe"
+    },
+    {
+      "priority": "fyi",
+      "subject": "SVB Payment Notifications \u2013 Jun 8 (HMRC VAT processed)",
+      "from": "onlinebanking@svb.com",
+      "action": "Confirm HMRC VAT payment from Scribd NL BV GBP account processed successfully",
+      "due": "Today",
+      "thread_id": "19ea68d99e6eb173"
     }
   ]
 }
