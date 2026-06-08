@@ -346,18 +346,28 @@ function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').repla
 
 function updateStatus(k,sel){
   const sc={'Open':'s-open','In Progress':'s-progress','Done':'s-done','Blocked':'s-blocked','Archived':'s-archived','Payroll':'s-payroll','Tax Payment':'s-tax'};
-  const rc={'Done':'done-row','Archived':'archive-row','Payroll':'done-row','Tax Payment':'done-row'};
   sel.className='status-sel '+(sc[sel.value]||'s-open');
   if (!states[k]) states[k]={};
   states[k].status=sel.value;
   saveStates(); updateStats();
+
+  // Immediately fade out and remove row if status moves away from Open/In Progress
+  const removeStatuses=['Done','Archived','Payroll','Tax Payment','Blocked'];
   const sk=k.replace(/[^a-z0-9]/g,'');
   const row=document.getElementById('row-'+sk);
-  if (row) row.className=rc[sel.value]||'';
-  // Re-render if in a filtered view and item no longer belongs
-  if (['open','high','medium','fyi'].includes(activeFilter) && ['Done','Archived','Payroll','Tax Payment'].includes(sel.value)) {
-    setTimeout(renderTable, 300);
+  if (row && removeStatuses.includes(sel.value)) {
+    row.style.transition='opacity 0.4s, transform 0.4s';
+    row.style.opacity='0';
+    row.style.transform='translateX(12px)';
+    setTimeout(()=>{ row.remove(); updateStats(); renumberRows(); }, 430);
   }
+}
+
+function renumberRows(){
+  document.querySelectorAll('#todoBody tr').forEach((row,i)=>{
+    const firstCell = row.querySelector('td:first-child');
+    if (firstCell) firstCell.textContent = i+1;
+  });
 }
 
 let noteTimers={};
