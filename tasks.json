@@ -1,6 +1,46 @@
 {
-  "scanned_at": "Jun 8, 2026 \u00b7 live scan",
+  "scanned_at": "Jun 9, 2026 \u00b7 live scan",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "CitiDirect\u00ae Event Notification \u2013 Jun 8 funds transfer",
+      "from": "CitiDirectbe.notifications@citi.com",
+      "action": "Review CitiDirect event notification for third-party funds transfer on Jun 8 \u2014 confirm transaction is legitimate",
+      "due": "Today",
+      "thread_id": "19ea7b44a456784a"
+    },
+    {
+      "priority": "high",
+      "subject": "Original Content Amortized Costs \u2013 Mark Schmitz follow-up",
+      "from": "marks@scribd.com",
+      "action": "Mark asked why May amortized costs jumped \u2014 Jen replied with true-up explanation. Confirm if you need to provide any additional support or follow up",
+      "due": "Today",
+      "thread_id": "19e9b0a58bbb879f"
+    },
+    {
+      "priority": "high",
+      "subject": "Onit Approved Invoices \u2013 enter into AP & mark Paid (x4)",
+      "from": "invoicestatus@mail.onit.com",
+      "action": "Enter 4 approved invoices into AP system and mark Paid in Onit: Tim Jucovy (Scribd Time May 2026), Baker & McKenzie (9656260604), Luca Ognibene PLLC (2026-0531), IPLA LLP (1975), Davis Wright Tremaine (7245693_Updated)",
+      "due": "Today",
+      "thread_id": "19ea81eeb929b0a1"
+    },
+    {
+      "priority": "high",
+      "subject": "Month End Close May 2026 \u2013 slides shared by Jennyly",
+      "from": "drive-shares-dm-noreply@google.com (Jennyly)",
+      "action": "Open and review rolled-forward May 2026 Month End Close presentation \u2014 update your sections and confirm completeness",
+      "due": "Today",
+      "thread_id": "19ea9b3e37d0731f"
+    },
+    {
+      "priority": "high",
+      "subject": "EY Audit \u2013 Scribd Inc. Outstanding Items (filing target approaching)",
+      "from": "Juhwan.Shin@ey.com (cc: marieh)",
+      "action": "Review EY outstanding items thread \u2014 Cash Paid for Income Taxes, GAAP Disclosure Checklist, PMP Alternative Procedures. Jen replied but check if any items remain open for you",
+      "due": "Today",
+      "thread_id": "19ea8cf6820f079c"
+    },
     {
       "priority": "high",
       "subject": "eTaxBC \u2013 Province of BC Security Code received",
@@ -192,6 +232,22 @@
       "action": "Review May monthly statement; confirm scheduled payments are processing correctly",
       "due": "ASAP",
       "thread_id": "19e81ac81a175de4"
+    },
+    {
+      "priority": "medium",
+      "subject": "NetSuite CSV Import \u2013 PayPal Merchant Fees Jun 2026 (x4 completed)",
+      "from": "system@sent-via.netsuite.com",
+      "action": "Verify all 4 PayPal merchant fees CSV imports completed successfully in NetSuite \u2014 check for any errors or duplicates",
+      "due": "Today",
+      "thread_id": "19ea980427a6822c"
+    },
+    {
+      "priority": "medium",
+      "subject": "BambooHR Change \u2013 employees now reporting to Quinn Lathrop",
+      "from": "restineh@scribd.com",
+      "action": "Update Concur/AP records for org change: Hal Friday, Sid Musale, Steven Locke, Peter Kihaile, Mario Grullon, Dan Fu, Gaurav Prakash now report to Quinn Lathrop effective Jun 5",
+      "due": "This week",
+      "thread_id": "19ea8cc6cb5d01a8"
     },
     {
       "priority": "medium",
@@ -400,6 +456,14 @@
       "action": "Confirm HMRC VAT payment from Scribd NL BV GBP account processed successfully",
       "due": "Today",
       "thread_id": "19ea68d99e6eb173"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Confluence \u2013 Workspaces Uploads PRD & Monolith Design (x9 updates)",
+      "from": "confluence@scribdjira.atlassian.net",
+      "action": "Review inline comment updates on Workspaces Uploads PRD and Monolith Design pages if you are a stakeholder",
+      "due": "This week",
+      "thread_id": "19ea8a237edff107"
     }
   ]
 }
