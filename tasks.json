@@ -1,6 +1,22 @@
 {
-  "scanned_at": "Jun 9, 2026 \u00b7 live scan (updated)",
+  "scanned_at": "Jun 9, 2026 \u00b7 7:30 PM live scan",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "EY & Scribd Weekly Placeholder Meeting \u2013 accept invite",
+      "from": "Juhwan.Shin@ey.com",
+      "action": "Accept EY & Scribd weekly placeholder meeting invite from Juhwan Shin (Teams meeting link included)",
+      "due": "Today",
+      "thread_id": "19eada4b37d53672"
+    },
+    {
+      "priority": "high",
+      "subject": "NL BV UK VAT Feb\u2013Apr 2026 \u2013 \u00a345,940 payment needed",
+      "from": "mg.pasibog@unified-accounting.com \u2192 marieh@scribd.com",
+      "action": "Mae Grace requested payment assistance for NL BV UK VAT \u00a345,940 (Jeroen approved Jun 5). You forwarded for SVB approval \u2014 confirm payment was processed or follow up",
+      "due": "Today",
+      "thread_id": "19e8a9b5a9f0a29c"
+    },
     {
       "priority": "high",
       "subject": "eTaxBC \u2013 New BC Security Code (412408)",
@@ -31,7 +47,8 @@
       "from": "jj.antioquia@unified-accounting.com \u2192 marieh@scribd.com",
       "action": "Process India GST payment of INR 721,747 to Chintan Rhambia & Associates \u2014 Jeroen approved, no bank charge, transfer funds and confirm to JJ",
       "due": "Today",
-      "thread_id": "19eaac729730b68c"
+      "thread_id": "19eaac729730b68c",
+      "default_status": "Tax Payment"
     },
     {
       "priority": "high",
@@ -267,6 +284,14 @@
     },
     {
       "priority": "medium",
+      "subject": "Jira IR-16641 \u2013 GCP PayPal Merchant Fees Upload (closed)",
+      "from": "jira@scribdjira.atlassian.net",
+      "action": "Anthony Moreno closed IR-16641 \u2014 confirm the GCP PayPal Merchant Fees upload issue is fully resolved on your end",
+      "due": "Today",
+      "thread_id": "19ea9c6e20d298e3"
+    },
+    {
+      "priority": "medium",
       "subject": "NetSuite CSV Import \u2013 PayPal Merchant Fees Jun 2026 (x4 completed)",
       "from": "system@sent-via.netsuite.com",
       "action": "Verify all 4 PayPal merchant fees CSV imports completed successfully in NetSuite \u2014 check for any errors or duplicates",
@@ -496,6 +521,38 @@
       "action": "Review inline comment updates on Workspaces Uploads PRD and Monolith Design pages if you are a stakeholder",
       "due": "This week",
       "thread_id": "19ea8a237edff107"
+    },
+    {
+      "priority": "fyi",
+      "subject": "SVB \u2013 India GST INR 721,747 payment processed \u2713",
+      "from": "onlinebanking@svb.com",
+      "action": "India GST May 2026 payment to Chintan Rambhia & Associates confirmed processed \u2014 update India GST task to Tax Payment/Done",
+      "due": "\u2014",
+      "thread_id": "19eacd450ac5d525"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Hawaii Tax Online \u2013 2nd security code (708371)",
+      "from": "taxes@scribd.com",
+      "action": "Second Hawaii security code received today (708371) \u2014 confirm Hawaii filing was completed successfully",
+      "due": "Today",
+      "thread_id": "19eacb40089832a4"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Confluence daily digest \u2013 7 updates (Monolith Design & more)",
+      "from": "confluence@scribdjira.atlassian.net",
+      "action": "7 Confluence updates since Jun 8 \u2014 Workspaces Monolith Design, Discrete Workspaces, Swap Ask AI, RFC Doc Page, Imported Collections",
+      "due": "This week",
+      "thread_id": "19eacb88c8ff754d"
+    },
+    {
+      "priority": "fyi",
+      "subject": "Proofpoint quarantine digest \u2013 Jun 9",
+      "from": "proofpointquarantine@scribd.com",
+      "action": "Check quarantine digest for any legitimate emails held in filter",
+      "due": "Today",
+      "thread_id": "19eacaafdb51b858"
     }
   ]
 }
