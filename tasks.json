@@ -1,6 +1,38 @@
 {
-  "scanned_at": "Jun 9, 2026 \u00b7 live scan",
+  "scanned_at": "Jun 9, 2026 \u00b7 live scan (updated)",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "eTaxBC \u2013 New BC Security Code (412408)",
+      "from": "taxes@scribd.com",
+      "action": "Confirm BC security code 412408 was expected \u2014 log into eTaxBC and complete any pending action",
+      "due": "Today",
+      "thread_id": "19ea9e4e8c8490c3"
+    },
+    {
+      "priority": "high",
+      "subject": "Hawaii Tax Online \u2013 Security Code received (563470)",
+      "from": "taxes@scribd.com",
+      "action": "Confirm Hawaii Tax Online security code 563470 was expected \u2014 check Hawaii filing status and complete any pending return",
+      "due": "Today",
+      "thread_id": "19eaab8616df7122"
+    },
+    {
+      "priority": "high",
+      "subject": "CitiDirect encrypted messages (x3 new) \u2013 one expiring",
+      "from": "citidirect.onlinebanking@citi.com",
+      "action": "Open new CitiDirect encrypted messages \u2014 one marked final reminder expiring soon, open immediately",
+      "due": "Today",
+      "thread_id": "19eab517d359e274"
+    },
+    {
+      "priority": "high",
+      "subject": "India GST May 2026 \u2013 Payment request INR 721,747 (Jeroen approved)",
+      "from": "jj.antioquia@unified-accounting.com \u2192 marieh@scribd.com",
+      "action": "Process India GST payment of INR 721,747 to Chintan Rhambia & Associates \u2014 Jeroen approved, no bank charge, transfer funds and confirm to JJ",
+      "due": "Today",
+      "thread_id": "19eaac729730b68c"
+    },
     {
       "priority": "high",
       "subject": "CitiDirect\u00ae Event Notification \u2013 Jun 8 funds transfer",
