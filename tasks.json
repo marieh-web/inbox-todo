@@ -1,6 +1,38 @@
 {
-  "scanned_at": "Jun 9, 2026 \u00b7 7:30 PM live scan",
+  "scanned_at": "Jun 22, 2026 \u00b7 live scan",
   "tasks": [
+    {
+      "priority": "high",
+      "subject": "Indonesia e-Commerce VAT May 2026 \u2013 BDO report received",
+      "from": "cgunadi@bdo.co.id (cc: marieh)",
+      "action": "Review BDO Indonesia VAT report (Ref 0372/KKPKR-TAX) for May 2026 e-Commerce VAT return \u2014 check if payment action is required",
+      "due": "Today",
+      "thread_id": "19eed7cc2c673b4f"
+    },
+    {
+      "priority": "high",
+      "subject": "SVB \u2013 5 recipients modified (Nicky Peeters, Eugene Pimenov, Vadim Kadnikov, Andrei Pospeev, Maksim Terekhin)",
+      "from": "onlinebanking@svb.com",
+      "action": "Verify all 5 SVB recipient modifications were authorized \u2014 confirm names and account numbers match expected payees before initiating any payments",
+      "due": "Today",
+      "thread_id": "19eee4a6f127db4a"
+    },
+    {
+      "priority": "high",
+      "subject": "CitiDirect encrypted message + reminder (Jun 22)",
+      "from": "citidirect.onlinebanking@citi.com",
+      "action": "Open new CitiDirect encrypted message \u2014 reminder also received, open before it expires",
+      "due": "Today",
+      "thread_id": "19eee4440708b403"
+    },
+    {
+      "priority": "high",
+      "subject": "BDO Colombia \u2013 Overdue invoices BO33546 (Apr) & BO34922 (May/Jun)",
+      "from": "lmorenog@bdo.com.co \u2192 marieh@scribd.com",
+      "action": "Process 2 overdue BDO Colombia invoices: BO33546 (due Apr 8, 3rd reminder) and BO34922 (due Jun 7, tax compliance Bimester 2) \u2014 enter into AP and arrange payment urgently",
+      "due": "Today",
+      "thread_id": "19db2019244a6bd2"
+    },
     {
       "priority": "high",
       "subject": "EY & Scribd Weekly Placeholder Meeting \u2013 accept invite",
@@ -284,6 +316,22 @@
     },
     {
       "priority": "medium",
+      "subject": "NYSIF Disability Benefits \u2013 information pages available",
+      "from": "invoices@scribd.com (fwd by India Rickman)",
+      "action": "Review NYSIF Disability Benefits information pages \u2014 confirm no action or payment required",
+      "due": "This week",
+      "thread_id": "19eda65fc5f07eed"
+    },
+    {
+      "priority": "medium",
+      "subject": "Ohio Unemployment Compensation Q2 2026 \u2013 due Jul 31",
+      "from": "invoices@scribd.com (fwd by India Rickman)",
+      "action": "File and pay Ohio Unemployment Compensation Quarterly Tax Return for Q2 2026 \u2014 taxable wage base $9,000, due July 31",
+      "due": "Jul 31",
+      "thread_id": "19ee6742d7f11c28"
+    },
+    {
+      "priority": "medium",
       "subject": "Jira IR-16641 \u2013 GCP PayPal Merchant Fees Upload (closed)",
       "from": "jira@scribdjira.atlassian.net",
       "action": "Anthony Moreno closed IR-16641 \u2014 confirm the GCP PayPal Merchant Fees upload issue is fully resolved on your end",
@@ -553,6 +601,22 @@
       "action": "Check quarantine digest for any legitimate emails held in filter",
       "due": "Today",
       "thread_id": "19eacaafdb51b858"
+    },
+    {
+      "priority": "fyi",
+      "subject": "\ud83c\udf89 Audit Complete \u2013 no material errors found",
+      "from": "jeroeng@scribd.com",
+      "action": "Jeroen confirmed audit finished last Thursday with no material errors \u2014 read full thank you note from Jeroen. Audit report to be shared when received",
+      "due": "\u2014",
+      "thread_id": "19ef0cc269abbb28"
+    },
+    {
+      "priority": "fyi",
+      "subject": "SVB \u2013 South African Revenue Service payment processed",
+      "from": "onlinebanking@svb.com",
+      "action": "Confirm South African Revenue Service payment from Scribd Inc Analysis Checking processed successfully",
+      "due": "\u2014",
+      "thread_id": "19ef07f5b78a919d"
     }
   ]
 }
